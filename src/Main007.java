@@ -2,8 +2,9 @@ import java.util.Scanner;
 
 class Main007 {
     public String solution(String str) {
-        String answer = "";
-        char[] c = str.toCharArray();
+        String answer = "YES";
+        // 개인 풀이
+        /*char[] c = str.toCharArray();
         int lt = 0;
         int rt = str.length() - 1;
         while (lt < rt) {
@@ -14,8 +15,16 @@ class Main007 {
                 answer = "NO";
                 break;
             }
-            answer = "YES";
-        }
+        }*/
+        // 문제 풀이 1
+        /*int len = str.length();
+        str = str.toLowerCase();
+        for (int i = 0; i < len / 2; i++) {
+            if (str.charAt(i) != str.charAt(len - i - 1)) answer = "NO";
+        }*/
+        // 문제 풀이 2
+        String tmp = new StringBuilder(str).reverse().toString();
+        if(!str.equalsIgnoreCase(tmp)) return "NO";
         return answer;
     }
 
