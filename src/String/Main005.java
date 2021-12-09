@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+package String;
+
 import java.util.Scanner;
 
 class Main005 {
