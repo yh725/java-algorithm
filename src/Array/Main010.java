@@ -1,6 +1,8 @@
+package Array;
+
 import java.util.Scanner;
 
-class Main011 {
+class Main010 {
     int[] dx = {-1, 0, 1, 0};
     int[] dy = {0, 1, 0, -1};
 
@@ -24,7 +26,7 @@ class Main011 {
     }
 
     public static void main(String[] args) {
-        Main011 T = new Main011();
+        Main010 T = new Main010();
         Scanner kb = new Scanner(System.in);
         int n = kb.nextInt();
         int[][] arr = new int[n][n];
