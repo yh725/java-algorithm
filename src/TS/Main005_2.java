@@ -1,3 +1,5 @@
+package TS;
+
 import java.util.Scanner;
 
 class Main005_2 {
